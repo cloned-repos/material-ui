@@ -15,6 +15,32 @@ declare module '@material-ui/styles' {
   export { default as useTheme } from '@material-ui/styles/useTheme';
   export { default as withStyles, WithStyles } from '@material-ui/styles/withStyles';
   export { default as withTheme, WithTheme } from '@material-ui/styles/withTheme';
+  export { default as useWidth } from '@material-ui/styles/useWidth';
+  export { default as WidthProvider } from '@material-ui/styles/WidthProvider';
+  export { default as useWidthContext } from '@material-ui/styles/useWidthContext';
+}
+
+
+
+
+declare module '@material-ui/styles/useWidthContext' {
+  export default function useWidthContext(): number;
+}
+
+declare module '@material-ui/styles/WidthProvider' {
+  import { Theme } from '@material-ui/core';
+
+  export interface WidthProviderProps {
+    children: React.ReactNode;
+    theme?: Theme => Theme);
+  }
+  const WidthProvider: React.ComponentType<WidthProviderProps>;
+  export default WidthProvider;
+}
+
+declare module '@material-ui/styles/useWidth' {
+  import { Theme } from '@material-ui/core';
+  export default function useWidth(theme: Theme): number;
 }
 
 declare module '@material-ui/styles/createGenerateClassName' {
