@@ -47,6 +47,7 @@ module.exports = {
       },
     ], // airbnb is allowing some edge cases
     'no-console': 'error', // airbnb is using warn
+    'template-curly-spacing': 'off', // Crash
     'prefer-destructuring': 'off', // airbnb is using error. destructuring harm grep potential.
     'no-alert': 'error', // airbnb is using warn
     'no-param-reassign': 'off', // airbnb use error
@@ -77,6 +78,7 @@ module.exports = {
         eventHandlerPropPrefix: 'on',
       },
     ],
+    'no-plusplus': ["error", { "allowForLoopAfterthoughts": true }], // maintain no-plusplus but make exceptions in "for" loops
     'react/jsx-curly-brace-presence': 'off', // airbnb use error, it's buggy
     'react/forbid-prop-types': 'off', // airbnb use error
     'react/require-default-props': 'off', // airbnb use error, it's buggy

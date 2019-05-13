@@ -1,5 +1,4 @@
 export { default as createGenerateClassName } from './createGenerateClassName';
-export { default as createStyled } from './createStyled';
 export { default as createStyles } from './createStyles';
 export { default as install } from './install';
 export { default as jssPreset } from './jssPreset';
@@ -10,3 +9,6 @@ export { default as ThemeProvider } from './ThemeProvider';
 export { default as useTheme } from './useTheme';
 export { default as withStyles } from './withStyles';
 export { default as withTheme } from './withTheme';
+export { default as useWidth } from './useWidth';
+export { default as WidthProvider } from './WidthProvider';
+export { default as useWidthContext } from './useWidthContext';

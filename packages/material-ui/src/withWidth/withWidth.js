@@ -132,20 +132,20 @@ const withWidth = (options = {}) => Component => {
     /**
      * As `window.innerWidth` is unavailable on the server,
      * we default to rendering an empty component during the first mount.
-     * In some situation, you might want to use an heuristic to approximate
+     * You might want to use an heuristic to approximate
      * the screen width of the client browser screen width.
      *
      * For instance, you could be using the user-agent or the client-hints.
      * https://caniuse.com/#search=client%20hint
-     */
+    */
     initialWidth: PropTypes.oneOf(['xs', 'sm', 'md', 'lg', 'xl']),
     /**
      * @ignore
-     */
+    */
     theme: PropTypes.object.isRequired,
     /**
      * Bypass the width calculation logic.
-     */
+    */
     width: PropTypes.oneOf(['xs', 'sm', 'md', 'lg', 'xl']),
   };
 
